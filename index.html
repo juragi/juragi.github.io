@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -115,7 +113,7 @@
     </section>
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section class="bg-light portfolio-app" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -124,88 +122,22 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="portfolio1">
+          <div class="col-md-4 col-sm-6 portfolio-item" 
+            v-for="(item, index) in items">
+            <a class="portfolio-link" 
+              data-toggle="modal" 
+              v-bind:href="item.href"
+              v-on:click="setModal(item.href)">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <img class="img-fluid" v-bind:src="item.url" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Threads</h4>
-              <p class="text-muted">Illustration</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="portfolio2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="portfolio3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="portfolio4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="portfolio5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="portfolio6">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
+              <h4>{{ item.main }}</h4>
+              <p class="text-muted">{{ item.sub }}</p>
             </div>
           </div>
         </div>
@@ -516,7 +448,7 @@
     </footer>
 
     <!-- Portfolio Modal -->
-    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade portfolio-app" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -563,62 +495,7 @@
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
     <script>
-      var modalData = {
-        portfolio1: {
-          projectName: "Project Name",
-          summary: "Lorem ipsum dolor sit amet consectetur.",
-          imgSrc: "img/portfolio/01-full.jpg",
-          content: "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
-          date: "Jan 2017",
-          client: "Window",
-          category: "Photography"
-        },
-        portfolio2: {
-          projectName: "Project Name",
-          summary: "Lorem ipsum dolor sit amet consectetur.",
-          imgSrc: "img/portfolio/02-full.jpg",
-          content: "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
-          date: "Jan 2017",
-          client: "Window",
-          category: "Photography"
-        },
-        portfolio3: {
-          projectName: "Project Name",
-          summary: "Lorem ipsum dolor sit amet consectetur.",
-          imgSrc: "img/portfolio/03-full.jpg",
-          content: "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
-          date: "Jan 2017",
-          client: "Window",
-          category: "Photography"
-        },
-        portfolio4: {
-          projectName: "Project Name",
-          summary: "Lorem ipsum dolor sit amet consectetur.",
-          imgSrc: "img/portfolio/04-full.jpg",
-          content: "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
-          date: "Jan 2017",
-          client: "Window",
-          category: "Photography"
-        },
-        portfolio5: {
-          projectName: "Project Name",
-          summary: "Lorem ipsum dolor sit amet consectetur.",
-          imgSrc: "img/portfolio/05-full.jpg",
-          content: "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
-          date: "Jan 2017",
-          client: "Window",
-          category: "Photography"
-        },
-        portfolio6: {
-          projectName: "Project Name",
-          summary: "Lorem ipsum dolor sit amet consectetur.",
-          imgSrc: "img/portfolio/06-full.jpg",
-          content: "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
-          date: "Jan 2017",
-          client: "Window",
-          category: "Photography"
-        }
-      };
+      
       var modalApp = new Vue({
         el: "#portfolioModal",
         data: {
@@ -634,19 +511,40 @@
         },
         methods: {
           setModal: function(portfolio){
-            this.modal = modalData[portfolio];
+            this.modal = portfolio;
+            $("#portfolioModal").modal("show");
+          }
+        }
+      });
+
+      var portfolioList = new Vue({
+        el: "#portfolio",
+        data: {
+          items: []
+        },
+        methods: {
+          setModal: function(portfolio){
+            $.getJSON('data/portfolio.json', function(data){
+              modalApp.setModal(data[portfolio]);
+            });
+            $("#portfolioModal").modal("show");
           }
         }
       });
 
       $(document).ready(function(){
-        $(".portfolio-link").click(function(){
-          var portfolio = $(this).attr("href");
-          modalApp.setModal(portfolio);
-          $("#portfolioModal").modal("show");
+        $.getJSON('data/portfolio.json', function(data){
+          $.each(data, function(i, item){
+            var p = {
+              href: i,
+              url: item.caption.image,
+              main: item.caption.main,
+              sub: item.caption.sub
+            }
+            portfolioList.items.push(p);
+          });
         });
       });
     </script>
   </body>
-
 </html>

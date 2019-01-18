@@ -1,0 +1,86 @@
+{
+	"portfolio1": {
+		"caption":{
+			"main":"Threads",
+			"sub":"Illustration",
+			"image":"img/portfolio/01-thumbnail.jpg"
+		},
+	  "projectName": "Project Name",
+	  "summary": "Lorem ipsum dolor sit amet consectetur.",
+	  "imgSrc": "img/portfolio/01-full.jpg",
+	  "content": "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+	  "date": "Jan 2017",
+	  "client": "Window",
+	  "category": "Photography"
+	},
+	"portfolio2": {
+		"caption":{
+			"main":"Explore",
+			"sub":"Graphic Design",
+			"image":"img/portfolio/02-thumbnail.jpg"
+		},
+	  "projectName": "Project Name",
+	  "summary": "Lorem ipsum dolor sit amet consectetur.",
+	  "imgSrc": "img/portfolio/02-full.jpg",
+	  "content": "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+	  "date": "Jan 2017",
+	  "client": "Window",
+	  "category": "Photography"
+	},
+	"portfolio3": {
+		"caption":{
+			"main":"Finish",
+			"sub":"Identity",
+			"image":"img/portfolio/03-thumbnail.jpg"
+		},
+	  "projectName": "Project Name",
+	  "summary": "Lorem ipsum dolor sit amet consectetur.",
+	  "imgSrc": "img/portfolio/03-full.jpg",
+	  "content": "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+	  "date": "Jan 2017",
+	  "client": "Window",
+	  "category": "Photography"
+	},
+	"portfolio4": {
+		"caption":{
+			"main":"Lines",
+			"sub":"Branding",
+			"image":"img/portfolio/04-thumbnail.jpg"
+		},
+	  "projectName": "Project Name",
+	  "summary": "Lorem ipsum dolor sit amet consectetur.",
+	  "imgSrc": "img/portfolio/04-full.jpg",
+	  "content": "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+	  "date": "Jan 2017",
+	  "client": "Window",
+	  "category": "Photography"
+	},
+	"portfolio5": {
+		"caption":{
+			"main":"Southwest",
+			"sub":"Website Design",
+			"image":"img/portfolio/05-thumbnail.jpg"
+		},
+	  "projectName": "Project Name",
+	  "summary": "Lorem ipsum dolor sit amet consectetur.",
+	  "imgSrc": "img/portfolio/05-full.jpg",
+	  "content": "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+	  "date": "Jan 2017",
+	  "client": "Window",
+	  "category": "Photography"
+	},
+	"portfolio6": {
+		"caption":{
+			"main":"Window",
+			"sub":"Photography",
+			"image":"img/portfolio/06-thumbnail.jpg"
+		},
+	  "projectName": "Project Name",
+	  "summary": "Lorem ipsum dolor sit amet consectetur.",
+	  "imgSrc": "img/portfolio/06-full.jpg",
+	  "content": "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+	  "date": "Jan 2017",
+	  "client": "Window",
+	  "category": "Photography"
+	}
+}
