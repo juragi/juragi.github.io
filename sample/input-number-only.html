@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input number only</title>
+</head>
+<body>
+    <input type="text" oninput="inputNumberOnly(this)" placeholder="숫자만 입력 가능"/>
+    
+    <script>
+        function inputNumberOnly(el) {
+            el.value = el.value.replace(/[^0-9]/g, '');
+        }
+    </script>
+</body>
+</html>
